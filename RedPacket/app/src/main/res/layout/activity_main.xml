@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Hình ảnh phong bao lì xì -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="292dp"
+            android:layout_height="115dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Phong bao lì xì"
+            android:src="@drawable/dung_dev" />
+
+        <!-- Nút để random lì xì -->
+        <Button
+            android:id="@+id/randomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhận Lì Xì"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF0808"
+            android:padding="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Animation pháo hoa -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fireworksAnimation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/fireworks"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+</FrameLayout>

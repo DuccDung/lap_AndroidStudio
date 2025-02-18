@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="10dp"
+    android:elevation="4dp"
+    android:background="@drawable/edit_textview"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!-- Chữ số bên trái -->
+    <TextView
+        android:id="@+id/txtLeannerId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="20dp" />
+
+    <!-- Ảnh -->
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        app:srcCompat="@drawable/img_1"
+        />
+
+    <!-- Tên sinh viên -->
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:text="Nguyễn Đức Dũng"
+        android:textSize="20dp" />
+
+    <!-- Chuyên ngành -->
+    <TextView
+        android:id="@+id/txtMajor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Toán"
+        android:textSize="20dp" />
+</LinearLayout>

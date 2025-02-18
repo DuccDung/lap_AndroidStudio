@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200sp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/cgv">
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Conditioner"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/device_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrance"
+        android:textSize="14sp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/device_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23°C Mode: Auto"
+        android:textSize="14sp"
+        android:textColor="#444" />
+
+    <Switch
+        android:id="@+id/device_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

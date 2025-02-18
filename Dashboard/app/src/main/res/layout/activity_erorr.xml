@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- Thông báo -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng nhập thêm dữ liệu để tiếp tục."
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- Nút nhập thêm dữ liệu -->
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập dữ liệu"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

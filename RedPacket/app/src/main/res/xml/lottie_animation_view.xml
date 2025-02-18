@@ -1,0 +1,10 @@
+<com.airbnb.lottie.LottieAnimationView android:id="@+id/fireworksAnimation"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="20dp"
+    android:visibility="gone"
+    app:lottie_rawRes="@raw/fireworks"
+    app:lottie_autoPlay="false"
+    app:lottie_loop="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

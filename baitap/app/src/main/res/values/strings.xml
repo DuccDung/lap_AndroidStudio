@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bài Tập</string>
+    <string-array name="addresses">
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Đà Nẵng</item>
+        <item>Cần Thơ</item>
+    </string-array>
+</resources>
+
