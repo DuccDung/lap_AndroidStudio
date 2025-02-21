@@ -25,7 +25,7 @@
         android:id="@+id/edtName"
         android:layout_width="325dp"
         android:layout_height="57dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:height="57dp"
         android:background="@drawable/edit_edt"
         android:drawablePadding="15dp"
@@ -35,6 +35,7 @@
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -42,7 +43,7 @@
         android:id="@+id/edtSDT"
         android:layout_width="325dp"
         android:layout_height="57dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="12dp"
         android:height="57dp"
         android:background="@drawable/edit_edt"
         android:drawablePadding="15dp"
@@ -52,24 +53,15 @@
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Spinner
-        android:id="@+id/spinAdd"
-        android:layout_width="165dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/edit_edt"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="324dp"
         android:layout_height="43dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/edtSDT"
         app:layout_constraintHorizontal_bias="0.478"
@@ -84,21 +76,30 @@
 
             <RadioButton
                 android:id="@+id/radNam"
-                android:layout_width="126dp"
-                android:layout_height="wrap_content"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Nam"
                 android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/radNu"
-                android:layout_width="142dp"
-                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Nữ"
                 android:textSize="20sp" />
 
         </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinAddHobby"
+            android:layout_width="165dp"
+            android:layout_height="43dp"
+            android:background="@drawable/edit_edt"
+            android:text="Chọn Sở Thích"
+            android:spinnerMode="dropdown"
+            />
 
     </LinearLayout>
 
@@ -106,20 +107,33 @@
         android:id="@+id/btnAdd"
         android:layout_width="118dp"
         android:layout_height="49dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/button_primary"
         android:text="Thêm"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/spinAdd"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/spinAdd"
-        app:layout_constraintTop_toBottomOf="@+id/spinAdd" />
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChooseImg"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:text="Ảnh"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/edtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.512" />
 
     <ListView
         android:id="@+id/ListView"
         android:layout_width="343dp"
         android:layout_height="249dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/edit_edt"
         android:elevation="4dp"
         android:padding="10dp"
@@ -127,6 +141,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/imgInterface"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Spinner
+        android:id="@+id/spinAdd"
+        android:layout_width="176dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_edt"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
